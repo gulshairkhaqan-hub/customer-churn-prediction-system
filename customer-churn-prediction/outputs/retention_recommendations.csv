@@ -1,0 +1,354 @@
+customer_index,risk_level,churn_probability,top_reason_1,top_reason_2,top_reason_3,recommended_action
+1,HIGH,0.7741,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+5,HIGH,0.81,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+13,HIGH,0.8465,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+17,HIGH,0.7525,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+20,HIGH,0.906,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+26,HIGH,0.7724,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+27,HIGH,0.8258,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+29,HIGH,0.9385,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+34,HIGH,0.9474,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+38,HIGH,0.9441,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+41,HIGH,0.9499,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+45,HIGH,0.7941,InternetService_Fiber optic,has_multiple_services,tenure,Investigate service quality complaints
+46,HIGH,0.8512,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+51,HIGH,0.962,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+55,HIGH,0.7711,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+69,HIGH,0.9233,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+72,HIGH,0.8062,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+77,HIGH,0.7411,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+83,HIGH,0.966,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+86,HIGH,0.8612,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+87,HIGH,0.7563,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+88,HIGH,0.712,InternetService_Fiber optic,has_multiple_services,contract_risk,Investigate service quality complaints
+90,HIGH,0.7798,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+93,HIGH,0.7687,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+96,HIGH,0.704,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+98,HIGH,0.8395,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+100,HIGH,0.8613,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+101,HIGH,0.7708,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+103,HIGH,0.7039,InternetService_Fiber optic,has_multiple_services,contract_risk,Investigate service quality complaints
+111,HIGH,0.9056,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+113,HIGH,0.7302,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+114,HIGH,0.8268,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+116,HIGH,0.7228,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+121,HIGH,0.8943,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+124,HIGH,0.9181,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+128,HIGH,0.8074,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+142,HIGH,0.8325,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+151,HIGH,0.707,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+154,HIGH,0.8982,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+156,HIGH,0.7691,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+158,HIGH,0.7473,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+159,HIGH,0.7237,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+171,HIGH,0.9474,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+175,HIGH,0.7172,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+180,HIGH,0.8036,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+182,HIGH,0.8457,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+191,HIGH,0.7043,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+192,HIGH,0.8165,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+194,HIGH,0.7198,InternetService_Fiber optic,contract_risk,has_multiple_services,Investigate service quality complaints
+198,HIGH,0.715,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+217,HIGH,0.7388,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+218,HIGH,0.7478,InternetService_Fiber optic,contract_risk,payment_risk,Investigate service quality complaints
+222,HIGH,0.7377,contract_risk,charges_per_month_ratio,tenure,Offer annual contract with 20% discount
+224,HIGH,0.8473,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+228,HIGH,0.8761,InternetService_Fiber optic,contract_risk,has_multiple_services,Investigate service quality complaints
+229,HIGH,0.9164,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+231,HIGH,0.8008,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+232,HIGH,0.7186,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+234,HIGH,0.9361,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+235,HIGH,0.8647,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+239,HIGH,0.7592,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+240,HIGH,0.7858,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+241,HIGH,0.7095,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+244,HIGH,0.7776,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+245,HIGH,0.7667,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+246,HIGH,0.7479,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+264,HIGH,0.8589,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+266,HIGH,0.8494,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+269,HIGH,0.7733,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+270,HIGH,0.716,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+275,HIGH,0.8067,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+276,HIGH,0.9266,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+277,HIGH,0.8289,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+278,HIGH,0.9666,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+280,HIGH,0.7529,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+282,HIGH,0.721,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+285,HIGH,0.8828,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+288,HIGH,0.7749,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+302,HIGH,0.7533,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+304,HIGH,0.8862,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+310,HIGH,0.8397,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+311,HIGH,0.7743,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+319,HIGH,0.7066,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+321,HIGH,0.8399,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+327,HIGH,0.8106,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+336,HIGH,0.783,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+341,HIGH,0.9262,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+343,HIGH,0.7078,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+344,HIGH,0.9568,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+347,HIGH,0.7141,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+349,HIGH,0.8685,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+357,HIGH,0.7545,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+359,HIGH,0.8286,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+360,HIGH,0.8578,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+369,HIGH,0.7776,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+370,HIGH,0.7492,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+371,HIGH,0.8259,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+383,HIGH,0.8107,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+387,HIGH,0.8405,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+399,HIGH,0.752,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+408,HIGH,0.8531,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+411,HIGH,0.7604,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+412,HIGH,0.8417,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+417,HIGH,0.8918,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+419,HIGH,0.7454,charges_per_month_ratio,contract_risk,tenure,Offer discounted plan or loyalty reward
+422,HIGH,0.7353,contract_risk,charges_per_month_ratio,tenure,Offer annual contract with 20% discount
+427,HIGH,0.8441,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+435,HIGH,0.9288,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+441,HIGH,0.7321,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+448,HIGH,0.7618,tenure,contract_risk,StreamingTV_Yes,Assign dedicated customer success manager
+449,HIGH,0.8509,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+450,HIGH,0.7361,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+454,HIGH,0.8836,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+467,HIGH,0.7353,tenure,contract_risk,charges_per_month_ratio,Assign dedicated customer success manager
+479,HIGH,0.7248,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+480,HIGH,0.7736,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+481,HIGH,0.7169,tenure,contract_risk,StreamingMovies_Yes,Assign dedicated customer success manager
+484,HIGH,0.8659,InternetService_Fiber optic,tenure,has_multiple_services,Investigate service quality complaints
+488,HIGH,0.9074,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+491,HIGH,0.8205,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+493,HIGH,0.7694,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+495,HIGH,0.8604,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+499,HIGH,0.7957,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+502,HIGH,0.8353,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+510,HIGH,0.9098,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+530,HIGH,0.7206,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+533,HIGH,0.8724,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+538,HIGH,0.8348,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+542,HIGH,0.9169,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+544,HIGH,0.773,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+548,HIGH,0.7997,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+552,HIGH,0.7075,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+555,HIGH,0.8776,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+556,HIGH,0.748,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+557,HIGH,0.8026,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+559,HIGH,0.7287,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+565,HIGH,0.7603,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+566,HIGH,0.8026,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+567,HIGH,0.8458,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+568,HIGH,0.8742,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+572,HIGH,0.8177,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+573,HIGH,0.7729,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+581,HIGH,0.7968,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+586,HIGH,0.9031,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+589,HIGH,0.7483,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+593,HIGH,0.8165,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+594,HIGH,0.9008,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+601,HIGH,0.8065,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+603,HIGH,0.8213,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+604,HIGH,0.8422,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+618,HIGH,0.9515,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+621,HIGH,0.8367,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+622,HIGH,0.752,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+627,HIGH,0.9401,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+628,HIGH,0.794,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+629,HIGH,0.9258,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+630,HIGH,0.9404,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+632,HIGH,0.7255,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+634,HIGH,0.833,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+641,HIGH,0.8029,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+647,HIGH,0.931,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+648,HIGH,0.8958,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+653,HIGH,0.8307,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+654,HIGH,0.9183,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+663,HIGH,0.8571,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+674,HIGH,0.8092,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+678,HIGH,0.7136,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+685,HIGH,0.8153,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+693,HIGH,0.8672,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+707,HIGH,0.7183,InternetService_Fiber optic,contract_risk,payment_risk,Investigate service quality complaints
+710,HIGH,0.9595,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+711,HIGH,0.8151,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+712,HIGH,0.7333,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+713,HIGH,0.8383,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+718,HIGH,0.8332,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+723,HIGH,0.7877,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+725,HIGH,0.7269,InternetService_Fiber optic,tenure,StreamingTV_Yes,Investigate service quality complaints
+726,HIGH,0.8141,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+728,HIGH,0.8954,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+733,HIGH,0.929,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+734,HIGH,0.8117,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+735,HIGH,0.828,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+740,HIGH,0.9267,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+741,HIGH,0.7257,tenure,charges_per_month_ratio,has_multiple_services,Assign dedicated customer success manager
+743,HIGH,0.7961,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+746,HIGH,0.8967,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+749,HIGH,0.9116,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+760,HIGH,0.7192,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+762,HIGH,0.9504,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+764,HIGH,0.7221,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+769,HIGH,0.7338,tenure,has_multiple_services,StreamingTV_Yes,Assign dedicated customer success manager
+771,HIGH,0.9298,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+774,HIGH,0.8917,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+788,HIGH,0.9399,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+794,HIGH,0.8075,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+801,HIGH,0.7957,charges_per_month_ratio,contract_risk,tenure,Offer discounted plan or loyalty reward
+806,HIGH,0.7101,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+813,HIGH,0.9122,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+814,HIGH,0.8965,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+816,HIGH,0.9093,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+818,HIGH,0.8075,InternetService_Fiber optic,contract_risk,has_multiple_services,Investigate service quality complaints
+826,HIGH,0.7612,InternetService_Fiber optic,contract_risk,payment_risk,Investigate service quality complaints
+828,HIGH,0.8961,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+830,HIGH,0.8266,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+833,HIGH,0.8577,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+834,HIGH,0.7263,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+839,HIGH,0.7465,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+844,HIGH,0.7111,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+847,HIGH,0.8502,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+852,HIGH,0.7337,tenure,charges_per_month_ratio,contract_risk,Assign dedicated customer success manager
+854,HIGH,0.7394,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+856,HIGH,0.7027,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+872,HIGH,0.9451,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+880,HIGH,0.7974,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+881,HIGH,0.8269,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+882,HIGH,0.882,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+887,HIGH,0.7203,charges_per_month_ratio,contract_risk,PhoneService,Offer discounted plan or loyalty reward
+888,HIGH,0.719,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+889,HIGH,0.937,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+894,HIGH,0.757,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+898,HIGH,0.8698,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+900,HIGH,0.863,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+904,HIGH,0.7539,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+906,HIGH,0.7606,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+907,HIGH,0.8548,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+911,HIGH,0.9128,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+913,HIGH,0.7688,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+914,HIGH,0.8221,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+920,HIGH,0.8236,InternetService_Fiber optic,contract_risk,has_multiple_services,Investigate service quality complaints
+921,HIGH,0.8332,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+936,HIGH,0.7207,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+938,HIGH,0.7088,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+940,HIGH,0.9267,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+943,HIGH,0.9112,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+945,HIGH,0.728,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+947,HIGH,0.9216,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+948,HIGH,0.9135,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+949,HIGH,0.8137,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+950,HIGH,0.7588,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+952,HIGH,0.9448,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+954,HIGH,0.8322,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+957,HIGH,0.8396,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+958,HIGH,0.8556,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+960,HIGH,0.8674,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+966,HIGH,0.7355,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+973,HIGH,0.892,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+976,HIGH,0.7629,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+979,HIGH,0.7599,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+980,HIGH,0.8041,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+987,HIGH,0.8862,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+993,HIGH,0.7175,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+995,HIGH,0.9006,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1001,HIGH,0.7621,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+1007,HIGH,0.8265,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+1010,HIGH,0.7025,InternetService_Fiber optic,has_multiple_services,contract_risk,Investigate service quality complaints
+1022,HIGH,0.7376,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1027,HIGH,0.7288,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1034,HIGH,0.8866,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1040,HIGH,0.8059,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+1048,HIGH,0.8702,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1056,HIGH,0.8165,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1058,HIGH,0.8139,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1064,HIGH,0.7653,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1066,HIGH,0.8772,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1073,HIGH,0.7604,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1074,HIGH,0.7628,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1078,HIGH,0.7079,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1082,HIGH,0.8534,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1083,HIGH,0.9061,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1088,HIGH,0.8756,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1090,HIGH,0.9807,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1092,HIGH,0.9063,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1093,HIGH,0.8062,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+1102,HIGH,0.7723,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1106,HIGH,0.7027,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+1107,HIGH,0.7032,tenure,contract_risk,StreamingTV_Yes,Assign dedicated customer success manager
+1109,HIGH,0.9684,tenure,InternetService_Fiber optic,charges_per_month_ratio,Assign dedicated customer success manager
+1116,HIGH,0.9356,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1117,HIGH,0.8696,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1118,HIGH,0.9092,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1119,HIGH,0.7199,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+1120,HIGH,0.7527,InternetService_Fiber optic,contract_risk,has_multiple_services,Investigate service quality complaints
+1123,HIGH,0.8129,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1127,HIGH,0.8672,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1133,HIGH,0.9393,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1135,HIGH,0.7783,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1138,HIGH,0.9414,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1146,HIGH,0.792,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1148,HIGH,0.7122,InternetService_Fiber optic,contract_risk,payment_risk,Investigate service quality complaints
+1151,HIGH,0.7954,tenure,contract_risk,charges_per_month_ratio,Assign dedicated customer success manager
+1155,HIGH,0.7814,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1158,HIGH,0.8527,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1159,HIGH,0.7854,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1163,HIGH,0.7828,InternetService_Fiber optic,contract_risk,StreamingMovies_Yes,Investigate service quality complaints
+1164,HIGH,0.9289,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1171,HIGH,0.8226,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1172,HIGH,0.8253,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1175,HIGH,0.9382,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1178,HIGH,0.8796,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1182,HIGH,0.7333,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+1188,HIGH,0.8737,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1191,HIGH,0.7784,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+1197,HIGH,0.9267,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1200,HIGH,0.7038,InternetService_Fiber optic,has_multiple_services,contract_risk,Investigate service quality complaints
+1208,HIGH,0.7536,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1211,HIGH,0.9037,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1213,HIGH,0.7522,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1215,HIGH,0.8474,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1216,HIGH,0.7963,InternetService_Fiber optic,contract_risk,payment_risk,Investigate service quality complaints
+1220,HIGH,0.7019,InternetService_Fiber optic,TotalCharges,contract_risk,Investigate service quality complaints
+1221,HIGH,0.9764,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1222,HIGH,0.9384,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1223,HIGH,0.7778,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1224,HIGH,0.7984,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1225,HIGH,0.7333,InternetService_Fiber optic,has_multiple_services,contract_risk,Investigate service quality complaints
+1229,HIGH,0.7343,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1233,HIGH,0.9191,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1236,HIGH,0.7947,InternetService_Fiber optic,contract_risk,StreamingTV_Yes,Investigate service quality complaints
+1249,HIGH,0.716,tenure,charges_per_month_ratio,contract_risk,Assign dedicated customer success manager
+1250,HIGH,0.7936,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1252,HIGH,0.9258,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1257,HIGH,0.8491,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1259,HIGH,0.9419,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+1267,HIGH,0.8464,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1269,HIGH,0.8338,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1270,HIGH,0.8099,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1274,HIGH,0.8916,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1285,HIGH,0.902,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1286,HIGH,0.8528,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1288,HIGH,0.8588,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1289,HIGH,0.9337,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1292,HIGH,0.7646,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1298,HIGH,0.8212,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1300,HIGH,0.8711,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1320,HIGH,0.7504,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+1327,HIGH,0.7381,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1333,HIGH,0.8167,tenure,charges_per_month_ratio,InternetService_Fiber optic,Assign dedicated customer success manager
+1334,HIGH,0.7803,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1338,HIGH,0.8939,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1339,HIGH,0.8151,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1346,HIGH,0.7701,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1352,HIGH,0.7022,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+1355,HIGH,0.937,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1366,HIGH,0.9185,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1373,HIGH,0.7833,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1377,HIGH,0.7334,InternetService_Fiber optic,contract_risk,tenure,Investigate service quality complaints
+1378,HIGH,0.7264,charges_per_month_ratio,tenure,contract_risk,Offer discounted plan or loyalty reward
+1379,HIGH,0.7969,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
+1386,HIGH,0.7117,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+1390,HIGH,0.7455,InternetService_Fiber optic,contract_risk,TotalCharges,Investigate service quality complaints
+1393,HIGH,0.9225,charges_per_month_ratio,tenure,InternetService_Fiber optic,Offer discounted plan or loyalty reward
+1396,HIGH,0.819,tenure,InternetService_Fiber optic,contract_risk,Assign dedicated customer success manager
+1399,HIGH,0.864,InternetService_Fiber optic,tenure,contract_risk,Investigate service quality complaints
