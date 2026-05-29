@@ -702,7 +702,6 @@ def _set_page(page_name: str):
 
 # Wrap the navbar in a div so our scoped CSS only styles these buttons,
 # not every button on the page.
-st.markdown('<div class="top-nav-wrapper">', unsafe_allow_html=True)
 nav_cols = st.columns(len(PAGES), gap="small")
 for col, page_name in zip(nav_cols, PAGES):
     with col:
@@ -715,7 +714,6 @@ for col, page_name in zip(nav_cols, PAGES):
             args=(page_name,),
             use_container_width=True,
         )
-st.markdown('</div>', unsafe_allow_html=True)
 
 page = st.session_state.active_page
 
@@ -740,23 +738,15 @@ def page_overview():
 
         c1, c2, c3, c4 = st.columns(4)
         with c1:
-            st.markdown('<div class="metric-default">', unsafe_allow_html=True)
             st.metric("Total Customers Scored", f"{total_customers:,}")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c2:
-            st.markdown('<div class="metric-red">', unsafe_allow_html=True)
             st.metric("HIGH Risk Customers", f"{high_count:,}",
                       delta=f"{(high_count/total_customers)*100:.1f}% of base",
                       delta_color="inverse")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c3:
-            st.markdown('<div class="metric-amber">', unsafe_allow_html=True)
             st.metric("Predicted Churn Rate", f"{churn_rate:.2f}%")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c4:
-            st.markdown('<div class="metric-green">', unsafe_allow_html=True)
             st.metric("Avg Churn Probability", f"{avg_prob:.4f}")
-            st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown("")
         col_left, col_right = st.columns(2)
@@ -898,17 +888,11 @@ def page_risk_segmentation():
         counts = scoring_df["risk_level"].value_counts().reindex(["HIGH", "MEDIUM", "LOW"]).fillna(0).astype(int)
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.markdown('<div class="metric-red">', unsafe_allow_html=True)
             st.metric("HIGH risk",   f"{int(counts.get('HIGH', 0)):,}")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c2:
-            st.markdown('<div class="metric-amber">', unsafe_allow_html=True)
             st.metric("MEDIUM risk", f"{int(counts.get('MEDIUM', 0)):,}")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c3:
-            st.markdown('<div class="metric-green">', unsafe_allow_html=True)
             st.metric("LOW risk",    f"{int(counts.get('LOW', 0)):,}")
-            st.markdown('</div>', unsafe_allow_html=True)
 
         # Filters.
         st.markdown("### Filter Customers")
@@ -1030,9 +1014,7 @@ def page_recommendations():
 
         c1, c2 = st.columns([1, 2])
         with c1:
-            st.markdown('<div class="metric-red">', unsafe_allow_html=True)
             st.metric("Customers needing immediate action", f"{total_high:,}")
-            st.markdown('</div>', unsafe_allow_html=True)
         with c2:
             st.markdown(
                 f"""
