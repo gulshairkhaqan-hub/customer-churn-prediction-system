@@ -53,11 +53,23 @@ MODEL_TYPE_MAP = {
 }
 
 
+# ----------------------------------------------------------------------
+# Resolve all paths against the directory holding this script, so the
+# pipeline runs the same way no matter which folder you launch it from.
+# Without this, `python main.py` from a parent folder would fail to find
+# the dataset because relative paths like "data/..." would resolve
+# against the caller's CWD.
+# ----------------------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
 def run_pipeline():
     # Make sure the directories the pipeline writes into exist.
-    os.makedirs("models", exist_ok=True)
-    os.makedirs("outputs", exist_ok=True)
-    os.makedirs("reports", exist_ok=True)
+    # All paths are anchored at BASE_DIR so the pipeline works no matter
+    # which directory the user launched python from.
+    os.makedirs(os.path.join(BASE_DIR, "models"),  exist_ok=True)
+    os.makedirs(os.path.join(BASE_DIR, "outputs"), exist_ok=True)
+    os.makedirs(os.path.join(BASE_DIR, "reports"), exist_ok=True)
 
     # ==================================================================
     # STEP 1 — Load & Analyze Data
@@ -65,7 +77,9 @@ def run_pipeline():
     _section(1, "Load & Analyze Data")
     try:
         from src.data_loader import load_and_analyze
-        df = load_and_analyze("data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
+        df = load_and_analyze(
+            os.path.join(BASE_DIR, "data", "WA_Fn-UseC_-Telco-Customer-Churn.csv")
+        )
     except Exception as e:
         _fatal(1, "Load & Analyze Data", e)
 
@@ -114,7 +128,9 @@ def run_pipeline():
 
         # Re-load a fresh raw copy for the EDA plots that need original
         # categorical values (Contract, Churn = Yes/No, etc.).
-        eda_df = pd.read_csv("data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
+        eda_df = pd.read_csv(
+            os.path.join(BASE_DIR, "data", "WA_Fn-UseC_-Telco-Customer-Churn.csv")
+        )
 
         plot_churn_distribution(eda_df)
         plot_correlation_heatmap(eda_df)
@@ -231,10 +247,11 @@ def run_pipeline():
     # ==================================================================
     _section(11, "Save Artifacts to models/")
     try:
-        joblib.dump(best_model,     "models/best_model.pkl")
-        joblib.dump(scaler,         "models/scaler.pkl")
-        joblib.dump(results_dict,   "models/results_dict.pkl")
-        joblib.dump(feature_names,  "models/feature_names.pkl")
+        models_dir = os.path.join(BASE_DIR, "models")
+        joblib.dump(best_model,    os.path.join(models_dir, "best_model.pkl"))
+        joblib.dump(scaler,        os.path.join(models_dir, "scaler.pkl"))
+        joblib.dump(results_dict,  os.path.join(models_dir, "results_dict.pkl"))
+        joblib.dump(feature_names, os.path.join(models_dir, "feature_names.pkl"))
         print("Saved:")
         print("  models/best_model.pkl")
         print("  models/scaler.pkl")
