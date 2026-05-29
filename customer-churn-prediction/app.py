@@ -87,33 +87,18 @@ CUSTOM_CSS = """
     /* ----------------------------------------------------------------
        Top navigation bar
        ---------------------------------------------------------------- */
-    .top-nav-wrapper {
-        background: #1e293b;
-        border: 1px solid #334155;
-        border-radius: 12px;
-        padding: 10px 14px;
-        margin: 6px 8px 18px 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    }
-    /* Center the row of buttons inside the navbar wrapper. */
-    .top-nav-wrapper [data-testid="stHorizontalBlock"] {
+    /* The nav is a row of st.button widgets inside a horizontal block.
+       We style them directly (no wrapper div) so the tabs are always
+       visible regardless of Streamlit's DOM structure. */
+    [data-testid="stHorizontalBlock"] {
         gap: 0.5rem !important;
-        justify-content: center !important;
-        align-items: center !important;
     }
-    .top-nav-wrapper [data-testid="column"] {
-        padding: 0 !important;
-        display: flex;
-        justify-content: center;
-    }
-    /* All buttons share the same height + width and the same dark surface. */
-    .top-nav-wrapper .stButton {
-        width: 100%;
-    }
-    .top-nav-wrapper .stButton>button {
-        background: #1e293b;
-        color: #cbd5e1;
-        border: 1px solid #334155;
+    /* Inactive tabs: dark navy surface, light text, clearly visible
+       against the #0f172a page background. */
+    .stButton > button {
+        background: #1e293b !important;
+        color: #e2e8f0 !important;
+        border: 1px solid #334155 !important;
         border-radius: 8px;
         padding: 0 14px;
         height: 45px;
@@ -124,14 +109,14 @@ CUSTOM_CSS = """
         white-space: nowrap;
         transition: all 0.25s ease;
     }
-    .top-nav-wrapper .stButton>button:hover {
-        background: rgba(99, 102, 241, 0.18);
-        color: #ffffff;
-        border-color: #6366f1;
+    .stButton > button:hover {
+        background: rgba(99, 102, 241, 0.18) !important;
+        color: #ffffff !important;
+        border-color: #6366f1 !important;
     }
-    /* Active tab marker: rendered as a primary-flavored button. */
-    .top-nav-wrapper .stButton>button[kind="primary"],
-    .top-nav-wrapper .stButton>button[data-testid="baseButton-primary"] {
+    /* Active tab: indigo highlight via the primary button type. */
+    .stButton > button[kind="primary"],
+    .stButton > button[data-testid="baseButton-primary"] {
         background: #6366f1 !important;
         color: #ffffff !important;
         border: 1px solid #4f46e5 !important;
@@ -139,7 +124,7 @@ CUSTOM_CSS = """
     }
 
     /* ----------------------------------------------------------------
-       Metric cards (with hover lift + glow)
+       Metric cards (uniform dark navy with indigo accent)
        ---------------------------------------------------------------- */
     [data-testid="stMetric"] {
         background-color: #1e293b;
@@ -164,11 +149,6 @@ CUSTOM_CSS = """
         color: #f1f5f9 !important;
         font-size: 1.9rem !important;
     }
-
-    /* Highlight variants applied via wrapper class on a column */
-    .metric-red [data-testid="stMetric"]   { border-left-color: #ef4444; }
-    .metric-green [data-testid="stMetric"] { border-left-color: #22c55e; }
-    .metric-amber [data-testid="stMetric"] { border-left-color: #f59e0b; }
 
     /* Risk pills */
     .risk-pill {
@@ -199,18 +179,6 @@ CUSTOM_CSS = """
         border-radius: 8px;
     }
 
-    /* Buttons (page-level, not navbar) */
-    .stButton>button {
-        background: #6366f1;
-        color: #f8fafc;
-        border: none;
-        border-radius: 8px;
-        font-weight: 600;
-    }
-    .stButton>button:hover {
-        background: #4f46e5;
-    }
-
     /* Footer */
     .app-footer {
         margin-top: 40px;
@@ -221,31 +189,16 @@ CUSTOM_CSS = """
         font-size: 0.9rem;
     }
 
-    /* Tab hover lift animation */
-    div[data-testid="stHorizontalBlock"] button,
+    /* Button hover lift animation (applies to nav tabs + page buttons) */
     .stButton > button {
-        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+        transition: all 0.25s ease !important;
     }
-    div[data-testid="stHorizontalBlock"] button:hover,
     .stButton > button:hover {
         transform: translateY(-4px) !important;
-        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4) !important;
-    }
-
-    /* Nav button hover - lift up animation */
-    div.stButton > button {
-        transition: all 0.25s ease !important;
-    }
-    div.stButton > button:hover {
-        transform: translateY(-4px) !important;
         box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5) !important;
-        background-color: #818cf8 !important;
-        border-color: #818cf8 !important;
-        transition: all 0.25s ease !important;
         cursor: pointer !important;
     }
-    /* Active button stays highlighted */
-    div.stButton > button:active {
+    .stButton > button:active {
         transform: translateY(-2px) !important;
         box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
     }
@@ -1103,20 +1056,11 @@ def page_drilldown():
         # Top metric strip.
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.markdown('<div class="metric-default">', unsafe_allow_html=True)
             st.metric("Customer index", int(idx))
-            st.markdown('</div>', unsafe_allow_html=True)
         with c2:
-            cls = "metric-red" if risk_level == "HIGH" else (
-                "metric-amber" if risk_level == "MEDIUM" else "metric-green"
-            )
-            st.markdown(f'<div class="{cls}">', unsafe_allow_html=True)
             st.metric("Risk level", risk_level)
-            st.markdown('</div>', unsafe_allow_html=True)
         with c3:
-            st.markdown('<div class="metric-amber">', unsafe_allow_html=True)
             st.metric("Churn probability", f"{churn_prob:.4f}")
-            st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown(
             f'<p>Risk tier: {risk_pill_html(risk_level)}</p>',
