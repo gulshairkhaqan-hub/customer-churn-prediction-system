@@ -87,50 +87,71 @@ CUSTOM_CSS = """
     /* ----------------------------------------------------------------
        Top navigation bar
        ---------------------------------------------------------------- */
-    /* Navbar tabs are st.button widgets. We give them a dark navy surface
-       and force BRIGHT WHITE label text. The label is targeted at multiple
-       levels (button + nested text node) so it stays visible regardless of
-       which Streamlit version renders the button DOM. */
-    .stButton button {
+    /* The navbar is a row of st.button widgets laid out with st.columns,
+       which already renders as an equal-width flex row. We style the
+       buttons by their Streamlit "kind":
+         - secondary = inactive tab
+         - primary   = active tab
+       Colors are forced with !important and applied to the nested label
+       node (button *) so the text stays visible across Streamlit versions
+       and on Streamlit Cloud. */
+
+    /* Keep the nav row on a single line, centered, with a small gap. */
+    div[data-testid="stHorizontalBlock"]:first-of-type {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        padding: 12px 0 !important;
+        border-bottom: 1px solid #334155 !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* Inactive tabs. */
+    .stButton button,
+    .stButton button[kind="secondary"] {
         background-color: #1e293b !important;
-        color: #ffffff !important;
+        color: #94a3b8 !important;
         border: 1px solid #475569 !important;
         border-radius: 8px;
         font-weight: 700 !important;
         min-height: 46px;
         width: 100%;
-    }
-    .stButton button * {
-        color: #ffffff !important;
-        font-weight: 700 !important;
-    }
-    .stButton button:hover {
-        background-color: #6366f1 !important;
-        border-color: #818cf8 !important;
-    }
-    .stButton button:hover * {
-        color: #ffffff !important;
-    }
-    /* Active tab (primary type) keeps the indigo highlight. */
-    .stButton button[kind="primary"] {
-        background-color: #6366f1 !important;
-        border-color: #818cf8 !important;
-    }
-    .stButton button[kind="primary"] * {
-        color: #ffffff !important;
-    }
-    /* Button hover lift animation. */
-    .stButton button {
+        white-space: nowrap;
         transition: all 0.25s ease !important;
     }
+    .stButton button[kind="secondary"] * {
+        color: #94a3b8 !important;
+        font-weight: 700 !important;
+    }
+
+    /* Hover state. */
     .stButton button:hover {
+        background-color: #6366f1 !important;
+        border-color: #818cf8 !important;
+        color: #ffffff !important;
         transform: translateY(-4px) !important;
         box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5) !important;
         cursor: pointer !important;
     }
+    .stButton button:hover * {
+        color: #ffffff !important;
+    }
     .stButton button:active {
         transform: translateY(-2px) !important;
         box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
+    }
+
+    /* Active tab (primary type): solid indigo, white text,
+       3px green bottom border. */
+    .stButton button[kind="primary"] {
+        background-color: #6366f1 !important;
+        color: #ffffff !important;
+        border: 1px solid #6366f1 !important;
+        border-bottom: 3px solid #22c55e !important;
+    }
+    .stButton button[kind="primary"] * {
+        color: #ffffff !important;
     }
 
     /* ----------------------------------------------------------------
