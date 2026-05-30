@@ -87,44 +87,54 @@ CUSTOM_CSS = """
     /* ----------------------------------------------------------------
        Top navigation bar
        ---------------------------------------------------------------- */
-    /* The nav is a row of st.button widgets inside a horizontal block.
-       We style them directly (no wrapper div) so the tabs are always
-       visible regardless of Streamlit's DOM structure. */
-    [data-testid="stHorizontalBlock"] {
-        gap: 0.5rem !important;
-    }
-    /* Inactive tabs: dark navy surface, light text, clearly visible
-       against the #0f172a page background. */
-    .stButton > button {
-        background: #1e293b !important;
-        color: #e2e8f0 !important;
-        border: 1px solid #334155 !important;
+    /* Navbar tabs are st.button widgets. We give them a dark navy surface
+       and force BRIGHT WHITE label text. The label is targeted at multiple
+       levels (button + nested text node) so it stays visible regardless of
+       which Streamlit version renders the button DOM. */
+    .stButton button {
+        background-color: #1e293b !important;
+        color: #ffffff !important;
+        border: 1px solid #475569 !important;
         border-radius: 8px;
-        padding: 0 14px;
-        height: 45px;
-        line-height: 45px;
-        font-weight: 600;
-        font-size: 0.95rem;
+        font-weight: 700 !important;
+        min-height: 46px;
         width: 100%;
-        white-space: nowrap;
-        transition: all 0.25s ease;
     }
-    .stButton > button:hover {
-        background: rgba(99, 102, 241, 0.18) !important;
+    .stButton button * {
         color: #ffffff !important;
-        border-color: #6366f1 !important;
+        font-weight: 700 !important;
     }
-    /* Active tab: indigo highlight via the primary button type. */
-    .stButton > button[kind="primary"],
-    .stButton > button[data-testid="baseButton-primary"] {
-        background: #6366f1 !important;
+    .stButton button:hover {
+        background-color: #6366f1 !important;
+        border-color: #818cf8 !important;
+    }
+    .stButton button:hover * {
         color: #ffffff !important;
-        border: 1px solid #4f46e5 !important;
-        box-shadow: 0 2px 10px rgba(99, 102, 241, 0.45);
+    }
+    /* Active tab (primary type) keeps the indigo highlight. */
+    .stButton button[kind="primary"] {
+        background-color: #6366f1 !important;
+        border-color: #818cf8 !important;
+    }
+    .stButton button[kind="primary"] * {
+        color: #ffffff !important;
+    }
+    /* Button hover lift animation. */
+    .stButton button {
+        transition: all 0.25s ease !important;
+    }
+    .stButton button:hover {
+        transform: translateY(-4px) !important;
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5) !important;
+        cursor: pointer !important;
+    }
+    .stButton button:active {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
     }
 
     /* ----------------------------------------------------------------
-       Metric cards (uniform dark navy with indigo accent)
+       Metric cards (uniform dark navy with indigo accent + hover lift)
        ---------------------------------------------------------------- */
     [data-testid="stMetric"] {
         background-color: #1e293b;
@@ -173,12 +183,6 @@ CUSTOM_CSS = """
     }
     .info-card h4 { margin-top: 0; color: #6366f1 !important; }
 
-    /* Tables */
-    [data-testid="stDataFrame"] {
-        background-color: #1e293b;
-        border-radius: 8px;
-    }
-
     /* Footer */
     .app-footer {
         margin-top: 40px;
@@ -187,20 +191,6 @@ CUSTOM_CSS = """
         color: #94a3b8;
         border-top: 1px solid #334155;
         font-size: 0.9rem;
-    }
-
-    /* Button hover lift animation (applies to nav tabs + page buttons) */
-    .stButton > button {
-        transition: all 0.25s ease !important;
-    }
-    .stButton > button:hover {
-        transform: translateY(-4px) !important;
-        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5) !important;
-        cursor: pointer !important;
-    }
-    .stButton > button:active {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
     }
 </style>
 """
@@ -427,19 +417,6 @@ def show_image_or_warn(path: Path, caption: str = ""):
 def risk_pill_html(level: str) -> str:
     cls = level.lower() if level in ("HIGH", "MEDIUM", "LOW") else "low"
     return f'<span class="risk-pill {cls}">{level}</span>'
-
-
-def color_risk_row(row):
-    level = row.get("risk_level", "")
-    if level == "HIGH":
-        bg = "rgba(239, 68, 68, 0.18)"
-    elif level == "MEDIUM":
-        bg = "rgba(245, 158, 11, 0.18)"
-    elif level == "LOW":
-        bg = "rgba(34, 197, 94, 0.15)"
-    else:
-        bg = ""
-    return [f"background-color: {bg}"] * len(row)
 
 
 # ----------------------------------------------------------------------
@@ -863,10 +840,15 @@ def page_risk_segmentation():
         if sort_desc:
             view = view.sort_values("churn_probability", ascending=False)
 
-        styled = view.style.apply(color_risk_row, axis=1).format(
-            {"churn_probability": "{:.4f}"}
+        # Default Streamlit table styling (no custom row colors).
+        st.dataframe(
+            view,
+            use_container_width=True,
+            height=420,
+            column_config={
+                "churn_probability": st.column_config.NumberColumn(format="%.4f"),
+            },
         )
-        st.dataframe(styled, use_container_width=True, height=420)
 
         st.subheader("Churn Probability Distribution")
         st.plotly_chart(
@@ -1002,10 +984,15 @@ def page_recommendations():
             & rec_df["recommended_action"].isin(action_filter)
         ].copy()
 
-        styled = view.style.apply(color_risk_row, axis=1).format(
-            {"churn_probability": "{:.4f}"}
+        # Default Streamlit table styling (no custom row colors).
+        st.dataframe(
+            view,
+            use_container_width=True,
+            height=420,
+            column_config={
+                "churn_probability": st.column_config.NumberColumn(format="%.4f"),
+            },
         )
-        st.dataframe(styled, use_container_width=True, height=420)
 
         # Recommendation type breakdown.
         st.subheader("Recommendations by Type")
