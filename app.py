@@ -74,9 +74,10 @@ CUSTOM_CSS = """
         color: #e2e8f0;
     }
 
-    /* Trim the default top padding so the navbar feels anchored. */
+    /* Give the main content enough top padding so the navbar row is
+       never clipped by the Streamlit header bar. */
     .block-container {
-        padding-top: 1.2rem !important;
+        padding-top: 3.5rem !important;
     }
 
     /* Headings */
@@ -102,9 +103,14 @@ CUSTOM_CSS = """
         justify-content: center !important;
         flex-wrap: nowrap !important;
         gap: 8px !important;
-        padding: 12px 0 !important;
+        padding: 18px 0 12px 0 !important;
         border-bottom: 1px solid #334155 !important;
         margin-bottom: 24px !important;
+    }
+    /* Make sure each nav column doesn't clip its button vertically. */
+    div[data-testid="stHorizontalBlock"]:first-of-type [data-testid="column"] {
+        display: flex !important;
+        align-items: stretch !important;
     }
 
     /* Inactive tabs. */
