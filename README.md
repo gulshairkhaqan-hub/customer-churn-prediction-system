@@ -160,23 +160,21 @@ python -m streamlit run app.py
 ```
 
 ## 13. Model Evaluation Results
-
-Test-set performance of the best model (fill in after running `python main.py`):
+Test-set performance of the best model (Logistic Regression):
 
 | Metric | Score |
 | --- | --- |
-| AUC-ROC | [INSERT AUC-ROC HERE] |
-| F1 | [INSERT F1 HERE] |
-| Recall | [INSERT RECALL HERE] |
-| Precision | [INSERT PRECISION HERE] |
+| AUC-ROC | 0.8448 |
+| F1 | 0.6217 |
+| Recall | 0.7888 |
+| Precision | 0.5130 |
+## 14. Key Business Insights
 
 ## 14. Key Business Insights
 
-Fill these in after running the pipeline once:
-
-1. [INSERT INSIGHT 1 — e.g., share of base in HIGH risk and projected revenue at stake]
-2. [INSERT INSIGHT 2 — e.g., top 3 churn drivers from SHAP and what they imply]
-3. [INSERT INSIGHT 3 — e.g., recommended retention budget allocation per tier]
+1. 353 out of 1,409 customers (25%) are HIGH risk — these need retention action within 48 hours.
+2. Top churn drivers: Fiber optic internet, short tenure, and month-to-month contracts — these three appear in nearly every HIGH-risk customer's top reasons.
+3. Logistic Regression outperformed XGBoost and LightGBM on AUC-ROC (0.8448) — simpler model won on this dataset, suggesting churn patterns are largely linear.
 
 ## 15. Future Improvements
 
