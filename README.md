@@ -186,4 +186,4 @@ Test-set performance of the best model (Logistic Regression):
 
 ## 16. Author
 
-**Gul Shair** | Teyzix Core Internship | Task ML-3
+**Gul Shair** 
