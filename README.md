@@ -184,6 +184,10 @@ Test-set performance of the best model (Logistic Regression):
 - Customer Lifetime Value (CLV) integration so retention spend matches account value
 - A/B testing framework to measure which retention offers actually work
 
+## AMD Hackathon Note
+
+This project has been tested primarily on CPU environments. Future work includes optimizing training and inference on AMD Radeon GPUs using ROCm for faster execution.
+
 ## 16. Author
 
-**Gul Shair** 
+**Gul Shair**
